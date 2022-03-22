@@ -1,0 +1,167 @@
+@import '/stylesheet/bootstrap.css';
+
+body{
+    background: linear-gradient(90deg, blue, #ff0061);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}   
+
+.card-profile{
+    width: 500px;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.flex{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.block{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.image{
+    border-right: 2px solid rgb(204, 204, 204);
+    width: fit-content;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.description{
+    text-align: center;
+    width: 100%;
+}
+.name-position{
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.name-position :nth-child(1){
+    font-size: 25px;
+}
+
+.name-position :nth-child(2){
+    font-size: 16px;
+}
+
+.social-media h3{
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.social-media table{
+    margin: auto;
+}
+
+.social-media a{
+    color: #0a171f;
+    text-decoration: none;
+}
+
+.container{
+    display: block;
+    margin-top: 10px;
+}
+
+.main{
+    display: flex;
+}
+
+.first{
+    width: fit-content;
+}
+
+.tecs{
+    display: flex;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+
+.tecs ul{
+    width: 50%;
+    margin-left: 20px;
+    vertical-align: middle;
+    list-style-position: inside;
+    list-style-image: url('/icons/crown.svg');
+}
+
+.subtitle{
+    font-weight: 500;
+    font-size: 30px;
+    color: #ff0061;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid;
+}
+
+.projects{
+    font-size: 30px;
+    color: antiquewhite;
+    text-align: center;
+}
+
+video{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.video-description{
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.text-center{
+    margin-top: 20px;
+    color: antiquewhite;
+    border-top: 1px solid antiquewhite;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 900px){
+    .main{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .card-profile{
+        width: 300px;
+    }
+    .image{
+        display: flex;
+        align-items: center;
+    }
+    .image img{
+        width: 90px;
+        height: 140px;
+    }
+    .description{
+        text-align: unset;
+    }
+    .name-position :nth-child(2){
+        font-size: 14px;
+    }
+    .social-media img{
+        width: 20px;
+    }
+    .tecs{
+        font-size: 15px;
+    }
+    .tecs ul{
+        margin-left: 0;
+    }
+}
