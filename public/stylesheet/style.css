@@ -25,6 +25,12 @@ body{
 a{
     color: unset;
 }
+ 
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
 a:hover{
     color: unset;
@@ -194,6 +200,8 @@ section{
     color: #500849;
     transform: scale(1.03);
 }
+
+
 
 @media only screen and (max-width: 992px) {
     .name{
