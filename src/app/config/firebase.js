@@ -1,4 +1,5 @@
-const { initializeApp } = require('firebase/app');
+/* 
+ const { initializeApp } = require('firebase/app');
 const { getDatabase, ref, set, get, child } = require('firebase/database');
 const { getAnalytics } = require('firebase/analytics');
 
