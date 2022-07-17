@@ -1,4 +1,5 @@
-const { database, ref, set, get, child } = require('../config/firebase');
+/*
+ * const { database, ref, set, get, child } = require('../config/firebase');
 
 const reference = ref(database, 'career/');
 

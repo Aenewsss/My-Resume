@@ -1,11 +1,11 @@
 const routes = require('express').Router();
-
+/*
 const Career = require('./app/models/Career');
 
 const career = Career;
 
 career.getCareer()
-
+*/
 routes.get('/', (req,res) => {
     res.render('main/index', {
         description: 'te'
