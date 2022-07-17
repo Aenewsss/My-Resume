@@ -3187,6 +3187,36 @@ textarea.form-control-lg {
   border-color: #dc3545;
 }
 
+.btn-purple {
+  color: #fff;
+  background-color: #500849;
+  border-color: #500849;
+}
+.btn-purple:hover {
+  color: #fff;
+  background-color: #5d0a55;
+  border-color: #6a0c60;
+}
+.btn-check:focus + .btn-purple, .btn-purple:focus {
+  color: #fff;
+  background-color: #5d0a55;
+  border-color: #6a0c60;
+  box-shadow: 0 0 0 0.25rem rgba(81, 8, 93, 0.5);
+}
+.btn-check:checked + .btn-purple, .btn-check:active + .btn-purple, .btn-purple:active, .btn-purple.active, .show > .btn-purple.dropdown-toggle {
+  color: #fff;
+  background-color: #6a0c60;
+  border-color: #4e0a47;
+}
+.btn-check:checked + .btn-purple:focus, .btn-check:active + .btn-purple:focus, .btn-purple:active:focus, .btn-purple.active:focus, .show > .btn-purple.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(81, 8, 93, 0.5);
+}
+.btn-purple:disabled, .btn-purple.disabled {
+  color: #fff;
+  background-color: #500849;
+  border-color: #500849;
+}
+
 .btn-light {
   color: #000;
   background-color: #f8f9fa;
@@ -4068,7 +4098,7 @@ textarea.form-control-lg {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
-  transition: box-shadow 0.15s ease-in-out;
+  transition: all 0.30s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
@@ -4081,7 +4111,7 @@ textarea.form-control-lg {
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem;
+  transform: scale(1.04);
 }
 
 .navbar-toggler-icon {

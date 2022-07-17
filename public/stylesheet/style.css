@@ -1,167 +1,227 @@
 @import '/stylesheet/bootstrap.css';
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Rubik+Moonrocks&display=swap');
+
+::-webkit-scrollbar{
+    height: 10px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #141414;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    background-color: #500849;
+}
 
 body{
-    background: linear-gradient(90deg, blue, #ff0061);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(90deg, #000000, #141414);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }   
 
-.card-profile{
-    width: 500px;
-    border: 2px solid rgb(204, 204, 204);
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+a{
+    color: unset;
 }
 
-.flex{
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
+a:hover{
+    color: unset;
 }
 
-.block{
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
+h2, h3, h5{
+    cursor: pointer;
+    transition: .4s ease-in-out ;
 }
 
-.image{
-    border-right: 2px solid rgb(204, 204, 204);
-    width: fit-content;
-    padding: 5px;
-    vertical-align: middle;
+h2:hover, h3:hover,h5:hover, i:hover{
+    color: #500849;
+    transform: scale(1.03);
 }
 
-.description{
-    text-align: center;
-    width: 100%;
-}
-.name-position{
-    border-bottom: 1px solid rgb(204, 204, 204);
-}
-
-.name-position :nth-child(1){
-    font-size: 25px;
-}
-
-.name-position :nth-child(2){
-    font-size: 16px;
-}
-
-.social-media h3{
-    font-weight: 500;
-    font-size: 22px;
-    margin: 0;
-    margin-top: 10px;
-}
-
-.social-media table{
-    margin: auto;
-}
-
-.social-media a{
-    color: #0a171f;
-    text-decoration: none;
-}
-
-.container{
-    display: block;
-    margin-top: 10px;
-}
-
-.main{
-    display: flex;
-}
-
-.first{
-    width: fit-content;
-}
-
-.tecs{
-    display: flex;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 100%;
-}
-
-.tecs ul{
-    width: 50%;
-    margin-left: 20px;
-    vertical-align: middle;
-    list-style-position: inside;
-    list-style-image: url('/icons/crown.svg');
-}
-
-.subtitle{
-    font-weight: 500;
+i{
+    color: #500849;
     font-size: 30px;
-    color: #ff0061;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid;
+    font-weight: 900;
+    transition: .4s ease-in-out ;
 }
 
-.projects{
-    font-size: 30px;
+.nav-link{
+    transition: .4s linear;
+}
+
+.nav-link:hover{
+    font-weight: 800;
+    border-bottom: 2px solid #500849;
+    transform: scale(1.1);
+}
+
+.bg-purple{
+    background-color: rgb(10, 10, 10);
+}
+.btn-purple{
+    transition: .4s linear;
+}
+
+.btn-purple:hover{
+    background-color: transparent;
+}
+
+.image-shape{
+    position: absolute;
+    height: 500px;
+    width: 440px;
+    background-color: #500849;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.image-profile img{
+    padding: 20px 20px;
+    position: relative;
+    height: 500px;
+}
+
+.name > h1 {
+    font-size: 35px;
+}
+
+.text-purple{
+    color: #500849 !important;
+}
+
+.name > h1 > span {
+    font-family: 'Rubik Moonrocks', cursive;
+    letter-spacing: 2px;
+    font-size: 50px;
+    color: #500849;
+}
+
+.navbar-brand{
+    width: fit-content;
+    background: #500849;
+    -webkit-background-clip: text;
+    color: transparent !important;
+    font-weight: bold;
+}
+
+section{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.title > h2::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    height: 3px;
+    width: 100px;
+    transform: translateX(-50%);
+    background-color: #500849;
+}
+
+.title > h2::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    height: 12px;
+    width: 12px;
+    transform: translateX(-50%);
+    background-color: rgb(80, 8, 73);
+}
+
+.card {
+    cursor: pointer;
+    transition: .4s ease-in-out ;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 2px 4px rgba(20, 20, 20, 0.3);
+}
+
+.bg-gray{
+    background-color: rgb(20, 20, 20);
+}
+
+.portfolio .card:hover{
+    box-shadow: none;
+}
+
+.portfolio .card:hover .card-text{
+    opacity: 1;
+}
+
+.portfolio .card-text{
+    background: linear-gradient(rgba(10,10,10,0.3) 0%, #500849 100%);
+    opacity: 0;
+    transition: .4s ease-in-out;    
+}
+
+.card-text > p{
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .4s ease-in-out;    
+}
+
+.card-text:hover > p{
+    top: 60%;
+    opacity: 1;
+}
+
+.card-text > p:hover {
     color: antiquewhite;
-    text-align: center;
 }
 
-video{
-    width: 80%;
-    display: flex;
-    margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+.contact .card:hover{
+    box-shadow: none;
 }
 
-.video-description{
-    text-align: center;
-    margin: auto;
-    width: 70%;
-    font-size: 20px;
-    font-style: oblique;
+.bg-black-thin{
+    background-color: #080808;
 }
 
-.text-center{
-    margin-top: 20px;
-    color: antiquewhite;
-    border-top: 1px solid antiquewhite;
-    padding-top: 20px;
+.contact i{
+    color: white;
+    transition: .4s ease-in-out;
 }
 
-@media only screen and (max-width: 900px){
-    .main{
-        display: block;
+.contact i:hover{
+    color: #500849;
+    transform: scale(1.03);
+}
+
+@media only screen and (max-width: 992px) {
+    .name{
+        padding-right: 40px;
+        padding-left: 40px;
     }
 }
 
-@media only screen and (max-width: 550px){
-    .card-profile{
-        width: 300px;
+@media only screen and (max-width: 520px) {
+    .image-shape{
+        height: 500px;
+        width: 100%;
+    }    
+
+    .image-profile img{
+        width: 100%;
     }
-    .image{
-        display: flex;
-        align-items: center;
+
+    .name{
+        text-align: center;
     }
-    .image img{
-        width: 90px;
-        height: 140px;
+
+    .name > h1 > span {
+        font-size: 40px;
     }
-    .description{
-        text-align: unset;
-    }
-    .name-position :nth-child(2){
-        font-size: 14px;
-    }
-    .social-media img{
-        width: 20px;
-    }
-    .tecs{
-        font-size: 15px;
-    }
-    .tecs ul{
-        margin-left: 0;
+
+    .name > h1 {
+        font-size: 25px;
     }
 }
+
